@@ -1,154 +1,60 @@
-*
-{
-  box-sizing: border-box;
+body {
+  font-family: andale mono, monospace;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('Images/sunrise.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-h1
-{
-  position: relative;
-  top: 30px;
-  left: 60px;
-  font-family: "Dubai", Sans-serif;
-  font-size: 40;
-}
-
-h2
-{
-  position: relative;
-  left: 60;
-  font-family: "Dubai", Sans-serif;
-  font-size: 30px;
-}
-
-h2.skills
-{
-  position: relative;
-  left: 110;
-}
-
-body
-{
-  background-color: rgb(220, 220, 220);
-}
-
-p
-{
-  position: relative;
-  left: 60;
-  font-family: 'Mincho', monospace;
-  font-size: 20px;
-  text-align: justify;
-  text-justify: inter-word;
-}
-
-p.round
-{
-  position: relative;
-  top: -5;
-  left: 0px;
-  border: 2px solid #ccc;
-  border-radius: 10px;
-  background-color: #ccc;
+.container {
+  font-family: andale mono, monospace;
   text-align: center;
-  width: 500px;
-  font-family: 'ERAS ITC';
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
 }
 
-ul
-{
-  position: relative;
-  left: 35;
-  list-style-position: outside;
-  list-style-type: square;
-  font-family: 'Mincho', monospace;
+h1 {
+  margin-bottom: 10px;
+  font-size: 42px;
+  opacity: 0.6;
+  font-weight: 800;
 }
 
-li
-{
-    padding: 4px;
+p {
+  font-size: 18px;
+  margin: 30px 0;
+  max-width: 700px;
 }
 
-.column
-{
-  float: left;
-  width: 50%;
+.countdown {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-.loc
-{
-  position: absolute;
-  left: 300px;
-  font-family: 'Mincho', monospace;
-  font-size: 20px;
+.countdown-item {
+  text-align: center;
+  margin: 0 10px;
+  border-radius: 10px;
+  padding: 3px;
 }
 
-.dat
-{
-  position: absolute;
-  left: 70px;
-  font-family: 'Mincho', monospace;
-  font-size: 20px;
+.countdown-item span {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+
 }
 
-.coding, .tools, .language
-{
-  position: relative;
-  left: 110;
-  font-family: 'Mincho', monospace;
-  font-size: 20px;
-}
-
-img.github
-{
-  position: absolute;
-  top: 62px;
-  right: 60px;
-  width: 20px;
-  height: 20px;
-}
-
-img.linkedin
-{
-  position: absolute;
-  top: 62px;
-  right: 90px;
-  width: 20px;
-  height: 20px;
-}
-
-img.mail
-{
-  position: absolute;
-  top: 65px;
-  right: 120px;
-  width: 20px;
-  height: 20px;
-}
-
-img.date, img.location
-{
-  width: 20px;
-  height: 20px;
-}
-
-img.user
-{
-  position: relative;
-  top: 15px;
-  left: 190px;
-  width: 350px;
-  height: 200px;
-}
-
-hr.top
-{
-  border: 1px solid #ccc;
-}
-
-@media screen and (max-width: 1024px)
-{
-  .column
-  {
-    width: 50%;
-  }
+.countdown-item span:last-child {
+  font-size: 16px;
+  font-weight: normal;
 }
